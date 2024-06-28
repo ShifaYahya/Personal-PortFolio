@@ -1,0 +1,87 @@
+/* AboutMe.css */
+
+/* Styling for the entire AboutMe section */
+.about--section {
+    padding: 50px 0; /* Adjust padding as needed */
+    background-color: #f0f0f0; /* Background color for the section */
+    text-align: center; /* Center align content */
+  }
+  
+  /* Styling for the image */
+  .about--section--img img {
+    width: 250px; /* Adjust image width to your original size */
+    border-radius: 50%; /* Rounded shape for the image */
+    margin-bottom: 20px; /* Margin below the image */
+  }
+  
+  /* Glassy box styles */
+  .hero--section--content--box {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px; /* Padding inside the box */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  }
+  
+  /* Styling for the heading */
+  .skills-section--heading {
+    font-size: 2rem; /* Adjust heading font size */
+    margin-bottom: 20px; /* Margin below heading */
+    text-align: center; /* Center align the heading */
+  }
+  
+  /* Styling for the paragraphs */
+  .about-paragraph {
+    font-size: 1rem; /* Adjust paragraph font size */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 20px; /* Margin below paragraphs */
+  }
+  
+  /* Styling for the tabs */
+  .tabs {
+    margin-bottom: 20px; /* Margin below tabs */
+  }
+  
+  .tabs button {
+    background-color: transparent; /* Transparent background for buttons */
+    border: none; /* Remove default border */
+    outline: none; /* Remove default outline */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 10px 20px; /* Padding inside buttons */
+    margin: 0 10px; /* Margin between buttons */
+    font-size: 1rem; /* Button text font size */
+    border-bottom: 2px solid transparent; /* Bottom border for inactive tabs */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+  }
+  
+  .tabs button:hover {
+    border-color: #007bff; /* Border color on hover */
+  }
+  
+  .tabs button.active {
+    border-color: #007bff; /* Active tab border color */
+    color: #007bff; /* Active tab text color */
+  }
+  
+  /* Media query for mobile responsiveness */
+  @media (max-width: 768px) {
+    .hero--section--content--box {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .about--section--img img {
+      width: 200px; /* Adjust image size for smaller screens */
+    }
+  
+    .skills-section--heading {
+      font-size: 1.5rem; /* Adjust heading font size for smaller screens */
+    }
+  
+    .about-paragraph {
+      font-size: 0.9rem; /* Adjust paragraph font size for smaller screens */
+    }
+  
+    .tabs button {
+      font-size: 0.9rem; /* Adjust button font size for smaller screens */
+    }
+  }
+  

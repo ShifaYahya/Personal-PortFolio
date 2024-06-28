@@ -6,35 +6,38 @@ const HeroSection = () => {
   const navigate = useNavigate();
   const [titles] = useState(["Software Engineer", "FrontEnd Developer", "Programmer"]);
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
-  const [currentTitle, setCurrentTitle] = useState(titles[0]);
   const [displayedTitle, setDisplayedTitle] = useState('');
   const [isTyping, setIsTyping] = useState(true);
 
-  useEffect(() => {
-    let timer;
-
+  // Function to update the displayed title
+  const updateDisplayedTitle = () => {
     if (isTyping) {
-      timer = setTimeout(() => {
-        if (displayedTitle.length < currentTitle.length) {
-          setDisplayedTitle(currentTitle.substring(0, displayedTitle.length + 1));
-        } else {
-          setIsTyping(false);
-        }
-      }, 200); // Typing speed, adjusted for better timing
+      // Typing animation
+      if (displayedTitle.length < titles[currentTitleIndex].length) {
+        setDisplayedTitle(prevTitle => prevTitle + titles[currentTitleIndex][prevTitle.length]);
+      } else {
+        setIsTyping(false);
+      }
     } else {
-      timer = setTimeout(() => {
-        if (displayedTitle.length > 0) {
-          setDisplayedTitle(currentTitle.substring(0, displayedTitle.length - 1));
-        } else {
-          setCurrentTitleIndex((prevIndex) => (prevIndex + 1) % titles.length);
-          setCurrentTitle(titles[currentTitleIndex]);
-          setIsTyping(true);
-        }
-      }, 200); // Pause before backspacing, adjusted for better timing
+      // Backspacing animation
+      if (displayedTitle.length > 0) {
+        setDisplayedTitle(prevTitle => prevTitle.slice(0, -1));
+      } else {
+        setCurrentTitleIndex((prevIndex) => (prevIndex + 1) % titles.length);
+        setIsTyping(true);
+      }
     }
+  };
 
+  useEffect(() => {
+    const timer = setTimeout(updateDisplayedTitle, 200); // Adjust timing for typing and backspacing
     return () => clearTimeout(timer);
-  }, [isTyping, displayedTitle, currentTitle, currentTitleIndex, titles]);
+  }, [isTyping, displayedTitle, currentTitleIndex, titles]);
+
+  useEffect(() => {
+    // Reset displayed title when currentTitleIndex changes
+    setDisplayedTitle('');
+  }, [currentTitleIndex]);
 
   const handleDownloadCV = () => {
     const cvFileName = '/Resume1.pdf';
@@ -56,8 +59,7 @@ const HeroSection = () => {
           </h1>
           <p className="hero--section--description">
             Passionate computer science student with a drive for innovation,
-            aspiring to become a versatile {currentTitle.toLowerCase()}.
-          </p>
+            aspiring to become a versatile software engineer.</p>
         </div>
         <div className="btn-container">
           <Link
