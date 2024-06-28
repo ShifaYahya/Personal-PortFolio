@@ -30,7 +30,7 @@
     "id": "1",
     "src": "./img/expense.JPG",
     "title": "ExpensePilot",
-    "description": "An expense tracker I built using ReactJs and Firebase. ",
+    "description": "An expense tracker  built using ReactJs and Firebase. ",
     "link": "View in Github",
     "linkUrl": "https://github.com/ShifaYahya/Expense-Tracker",
      "liveUrl":  "https://s-expensetracker.netlify.app/"
