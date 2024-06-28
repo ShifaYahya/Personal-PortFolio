@@ -1,0 +1,83 @@
+{
+  "skills": [
+      {
+          "id": "1",
+          "src": "./img/web-design.png",
+          "title": "Web Development",
+          "description": "Front-End: JavaScript , Html,Css, ReactJs,NextJs, TailwindCss                                    Back-End: Nodejs, ExpressJs"
+      },
+      {
+          "id": "2",
+          "src": "./img/tag.png",
+          "title": " Other tools",
+          "description": "Databases: MongoDb, MySQL, Firebase  Design: figma"
+      },
+      {
+          "id": "3",
+          "src": "./img/feather-pen.png",
+          "title": "Core Languages",
+          "description": "Java(beginner) , python(beginner), javascript(intermediate), C(beginner)"
+      },
+      {
+          "id": "4",
+          "src": "./img/code.png",
+          "title": "Soft skills",
+          "description": "Effective Communication, Team Collaboration, Problem-solving,  Time Management, Innovative Creativity, Lifelong Learning"
+      }
+  ],
+  "portfolio": [
+  {
+    "id": "1",
+    "src": "./img/expense.JPG",
+    "title": "ExpensePilot",
+    "description": "An expense tracker I built using ReactJs and Firebase. ",
+    "link": "View in Github",
+    "linkUrl": "https://github.com/ShifaYahya/Expense-Tracker",
+     "liveUrl":  "https://s-expensetracker.netlify.app/"
+  },
+  {
+    "id": "2",
+    "src": "./img/Capture.JPG",
+    "title": "Disney-Clone(FrontEnd)",
+    "description": "Built a Disney-clone using ReactJs and TailwindCss and an Api service",
+    "link": "View In Github",
+    "linkUrl": "https://github.com/ShifaYahya/Disney-Clone",
+    "liveUrl":  "https://s-disney-clone.netlify.app/"
+  },
+  {
+    "id": "3",
+    "src": "./img/blog.JPG",
+    "title": "BlogBridges",
+    "description": "Created a Blog app using ReactJs and Firebase.",
+    "link": "View In Github",
+    "linkUrl": "https://github.com/ShifaYahya/Blog-Website",
+    "liveUrl":  "https://blogbridges.netlify.app/"
+  }
+],
+  "testimonial": [
+      {
+          "id": "1",
+          "count": "5",
+          "src": "./img/avatar-image.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+          "author_name": "Dianne Russel",
+          "author_designation": "Starbucks"
+      },
+      {
+          "id": "2",
+          "count": "5",
+          "src": "./img/avatar-image-1.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+          "author_name": "Kristin Watson",
+          "author_designation": "Louis Vuitton"
+      },
+      {
+          "id": "3",
+          "count": "5",
+          "src": "./img/avatar-image-2.png",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+          "author_name": "Kathryn Murphy",
+          "author_designation": "McDonald's"
+      }
+  ]
+}
