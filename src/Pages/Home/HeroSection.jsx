@@ -40,7 +40,7 @@ const HeroSection = () => {
   }, [currentTitleIndex]);
 
   const handleDownloadCV = () => {
-    const cvFileName = '/Resume1.pdf';
+    const cvFileName = '/ShifaYahyaResume-2.pdf';
     window.open(cvFileName, '_blank');
   };
 
